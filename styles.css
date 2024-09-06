@@ -1,0 +1,258 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-color: #bed4c8;
+    --secondary-text-color: #7dc7a7;
+    --accent-color: #6B8A7A;
+    --accent-color-dark: #6B8A7A;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color:#183b56;
+}
+
+p {
+    color:#1d2934 ;
+    line-height: 1.4rem;
+}
+
+a {
+    text-decoration: none;
+    color:#577592 ;
+}
+
+ul {
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 1180px;
+    margin-inline: auto;
+    overflow: hidden;
+}
+
+nav {
+    background-color: #254336;
+    box-shadow: 0 0 4px #bbd0e2;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    left: 0;
+    right: 0;
+    height: 80px;
+    
+}
+
+.main-nav {
+    justify-content: space-between;
+    padding-block: 8px;
+}
+
+.company-logo img {
+    width: 90px;
+    height: 70px;
+}
+
+.nav-links ul {
+    gap: 16px;
+    color: #bed4c8;
+}
+
+.hover-link {
+    cursor: pointer;
+}
+
+.hover-link:hover {
+    color: var(--secondary-text-color);
+}
+
+.hover-link:active {
+    color:#254336 ;
+}
+
+.nav-item.active {
+    color: var(--accent-color);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.search-bar {
+    height: 32px;
+    gap: 10px;
+}
+
+.news-input {
+    width: 220px;
+    height: 110%;
+    padding-inline: 12px;
+    border-radius: 4px;
+    border: 2px solid #bbd0e2;
+}
+
+.search-button {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: var(--accent-color-dark);
+}
+
+main {
+    padding-block: 20px;
+    margin-top: 80px;
+    background-color: #DAD3BE;
+}
+
+.cards-container {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    align-items: start;
+    
+}
+
+.card {
+    width: 360px;
+    min-height: 400px;
+    box-shadow: 0 0 4px #B7B597;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color:#B7B597;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 1px 1px 8px #B7B597;
+    background-color: #DAD3BE;
+    transform: translate(-2px);
+}
+
+.card-header img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 12px;
+}
+
+.news-source {
+    margin-block: 12px;
+    color: #5c7a6b;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  clear: both;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  margin-right: 20px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ccc;
+}
+
+#about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; /* Adjust as needed */
+}
+
+.about-us-content {
+    max-width: 800px; /* Adjust as needed */
+    padding: 20px;
+    text-align: justify;
+    
+}
+
+/*Footer*/
+footer {
+    background-color: #254336;
+    color: #7dc7a7;
+    padding: 20px;
+    text-align: center;
+    clear: both;
+    z-index: 10;
+    position: relative;
+    height: auto; /* Removed fixed height */
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centering the footer links */
+    gap: 40px; /* Added spacing between links */
+}
+
+li {
+    margin-right: 0; /* Removed margin as gap will handle spacing */
+}
+
+a {
+    color: #6B8A7A;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #7dc7a7;
+}
+
+.copyright {
+    color: #6B8A7A;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 20px;
+    margin-top: 20px; /* Added margin to ensure proper spacing from links */
+}

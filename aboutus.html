@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" class="company-logo">
+                <img src="./images/logo1.png" alt="logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="cricket" onClick="onNavItemClick('cricket')">Cricket</li>
+                    <li class="hover-link nav-item" id="india" onClick="onNavItemClick('india')">India</li>
+                    <li class="hover-link nav-item" id="technology" onClick="onNavItemClick('technology')">Technology</li>
+                    <li class="hover-link nav-item" id="politics" onClick="onNavItemClick('politics')">Politics</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input type="text" class="news-input" id="search-text" placeholder="e.g. Science">
+                <button class="search-button" id="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main id="about-container">
+        <div class="about-us-content">
+            <h2>About Us</h2>
+            <p>Welcome to NewsNest, your go-to source for all things news, entertainment, and more! We're dedicated to providing you with the latest updates and information, with a focus on accuracy, reliability, and speed.</p>
+            <p>Our journey began in 2024 when a group of passionate individuals came together with a shared vision: to create a platform that informs, educates, and entertains.</p>
+            <p>Thank you for being a part of the NewsNest community. We're excited to continue this journey with you.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <ul>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="https://forms.gle/D3XTZ9Zwtb7ZSsMG8">Contact Us</a></li>
+                <li><a href="#">Terms of Use</a></li>
+            </ul>
+            <p class="copyright">&copy; 2023 NewsNest</p>
+        </div>
+    </footer>
+</body>
+
+</html>
